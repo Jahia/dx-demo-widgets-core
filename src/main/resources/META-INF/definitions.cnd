@@ -1,0 +1,9 @@
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+
+[jmix:widgetCategory] > jmix:droppableContent, jmix:editorialContent mixin
+
+[jmix:widget] > jmix:widgetCategory mixin
+
+[jnt:customWidgetArea] > jnt:content, jmix:widgetCategory orderable
+ + * (jmix:widget)
